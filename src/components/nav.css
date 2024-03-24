@@ -1,0 +1,17 @@
+#nav{
+    display: flex;
+    justify-content: space-around;
+    text-transform: none;
+    list-style: none;
+    /* background-color: pink; */
+    color: black;
+    margin: 0px;
+}
+#navhead{
+    background-color: pink;
+}
+
+#nav li:hover{
+    color:white;
+    cursor: pointer;
+}
