@@ -3,14 +3,33 @@ import { useState } from "react";
 import './nav.css'
 const Nav = ()=>{
     const [nav, setNav]=useState('')
+    const [toggle, setToggle]=useState()
+
+    const tog = ()=>{
+        setToggle(!toggle)
+    }
     return(
+        <div>
+                 <header id="header">
+        <span>
+          <img src='' alt="logo"/>
+        </span>
+        <span>
+          <h2>Hair Stylist Creations</h2>
+        </span>
+        <span>
+            <button>Login</button>
+        </span>
+      </header>
         <div id="navhead">
             <ul id="nav">
-                <li>Home</li>
-                <li>About</li>
-                <li>Styles</li>
-                <li>Prices</li>
-                <li>Contacts</li>
+            {/* <li>Products</li> */}
+                <a href="/products">Products</a>
+                {/* <li>Styles</li> */}
+                <a href="/styles">Styles</a>
+
+                {/* <li>Contacts</li> */}
+                <a href="/about">About</a>
 
 
 
@@ -18,6 +37,24 @@ const Nav = ()=>{
             </ul>
             
 
+        </div>
+        <div id="mobilenav">
+           <button onClick={tog}>menu</button>
+           {toggle && (
+            <div id="mob" >
+                <ul>
+                  <a href="/products">Products</a>
+                {/* <li>Styles</li> */}
+                <a href="/styles">Styles</a>
+
+                {/* <li>Contacts</li> */}
+                <a href="/about">About</a>
+                </ul>
+            </div>
+           )}
+            
+
+        </div>
         </div>
     )
 }

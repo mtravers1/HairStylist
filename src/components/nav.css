@@ -15,3 +15,48 @@
     color:white;
     cursor: pointer;
 }
+#nav a{
+    text-decoration: none;
+    color:black;
+}
+
+#nav a:Hover{
+    text-decoration: none;
+    color:white;
+}
+
+
+#mobilenav{
+    display: none;
+}
+
+@media(max-width: 600px){
+    #nav{
+        display:none
+    }
+
+    #mobilenav{
+        display: block;
+    }
+    #mobilenav{
+        background-color: black;
+    }
+
+    #mobile ul{
+        padding: 0px;
+    }
+    #mobilenav li{
+        color: pink;
+        list-style: none;
+    }
+
+    #mob a{
+        text-decoration: none;
+
+    }
+
+    #mob ul{
+        display: flex;
+        flex-direction: column;
+    }
+}
