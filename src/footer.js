@@ -14,12 +14,12 @@ const Footer = ()=>{
                 </span>
                 <span style={{display:"flex"}}>
                 <h3>Address:</h3>
-      <h3>123 Deameatis Lane, MD</h3>
+      <h3>123 Bowie, MD</h3>
 
                 </span>
                 <span style={{display:"flex"}}>
                 <h3>Email:</h3>
-      <h3>Dameatis@Long.com</h3>
+      <h3>email@gmail.com</h3>
 
                 </span>
    
