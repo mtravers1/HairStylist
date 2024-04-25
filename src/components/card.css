@@ -1,0 +1,9 @@
+#button{
+    display: flex;
+    border-radius: 200px;
+    font-weight: 200px;
+}
+
+#prod{
+    /* width: 20% */
+}

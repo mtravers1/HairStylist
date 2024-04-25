@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import './nav.css'
+import { FaCartShopping } from "react-icons/fa6";
+
 const Nav = ()=>{
     const [nav, setNav]=useState('')
     const [toggle, setToggle]=useState()
@@ -19,6 +21,9 @@ const Nav = ()=>{
         </span>
         <span>
             <button>Login</button>
+            <button style={{background:"none", color:"pink"}}><FaCartShopping size={30} /></button>
+            
+
         </span>
       </header>
         <div id="navhead">

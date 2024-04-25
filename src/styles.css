@@ -1,0 +1,12 @@
+#styles{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#button{
+    border-radius: 200px;
+    background-color: pink;
+    font-weight: bold;
+    display:flex;
+}

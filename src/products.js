@@ -6,6 +6,7 @@ import productdata from './data/productdata.json'
 import oil from './pics/oil.jpg'
 import weave from './pics/weave.jpg'
 import './product.css';
+import Card from './components/card'
 
 const Products = ()=>{
 
@@ -27,7 +28,7 @@ const Products = ()=>{
     name: "Wig",
     price: 150.00,
     ingredients: "",
-    photo:""
+    photo: weave
     
 },
 {
@@ -48,7 +49,28 @@ const Products = ()=>{
     name: "Wig",
     price: 150.00,
     ingredients: "",
-    photo:""
+    photo:weave
+    
+},
+{
+    name: "Wig",
+    price: 150.00,
+    ingredients: "",
+    photo:weave
+    
+},
+{
+    name: "Wig",
+    price: 150.00,
+    ingredients: "",
+    photo:weave
+    
+},
+{
+    name: "Wig",
+    price: 150.00,
+    ingredients: "",
+    photo:weave
     
 }
 ])
@@ -67,7 +89,8 @@ const Products = ()=>{
       </header> */}
             <Nav/>
             <h1>Products</h1>
-            <div id="inven">
+            <Card products={products}/>
+            {/* <div id="inven">
 
             {products.map((d)=>(
                 <div>
@@ -78,20 +101,21 @@ const Products = ()=>{
 
                     </div>
             ))}
-            </div>
+            </div> */}
             <h1>Deals</h1>
-            <div id="inven">
+            {/* <div id="inven">
             {products.map((d)=>(
                 <div>
                     <h3>{d.name}</h3>
                     <h4>{d.price}</h4>
                     <h4>{d.ingredients}</h4>
-                    <img src={d.img}/>
+                    <img src={d.photo}/>
 
                     </div>
             ))}
-            </div>
-        
+            </div> */}
+                    <Card products={products}/>
+
             
             <Footer/>
         </div>

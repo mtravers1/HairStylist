@@ -6,6 +6,8 @@ import Header from './components/header';
 import { useState } from 'react';
 import Footer from './footer';
 import Layout from './layout';
+import mainimg from './pics/mainimg.jpg'
+
 function Home() {
 
   const [dada, setDada]=useState(data)
@@ -51,12 +53,12 @@ function Home() {
           <button>Book Appointment Now</button>
           </span>
           <span>
-          <img src="" alt="phot"/>
+          <img id="img" src={mainimg} alt="phot"/>
           </span>
     
      </div>
-     <div style={{marginTop:30}}>
-      <button onClick={()=>setTog(!tog)}>View Styles</button>
+     <div id="styles">
+      <button id="butt" onClick={()=>setTog(!tog)}>View Styles</button>
       {tog &&(
         <div>
             {dada.map((val)=>(
