@@ -1,0 +1,14 @@
+#review{
+    display:flex;
+
+}
+
+#img{
+
+}
+
+#info{
+    display: flex;
+    flex-direction: column;
+
+}

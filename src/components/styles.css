@@ -1,0 +1,20 @@
+#pic{
+    width:50%;
+}
+
+#s{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#containers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:pink, 2px, solid;
+    width:100%
+
+}

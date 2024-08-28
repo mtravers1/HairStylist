@@ -10,67 +10,68 @@ import Card from './components/card'
 
 const Products = ()=>{
 
+    const [cart, SetCart]=useState({name:"", price:0, description:""})
+
+    const handleDelete=(e)=>{
+        e.preventDefault()
+
+
+    }
+
     const [products, setProducts]=useState([{
     name: "Large oil",
     price: 39.00,
     ingredients: "",
-    photo:oil
-    
-},{
-  
-    name: "Weave",
-    price: 200,
-    ingredients: "",
-    photo:weave
-    
-},
-{
-    name: "Wig",
-    price: 150.00,
-    ingredients: "",
-    photo: weave
+    photo:oil,
+    description:""
     
 },
 {
     name: "Large oil",
     price: 39.00,
     ingredients: "",
-    photo:oil
+    photo:oil,
+    description:""
     
 },{
   
     name: "Weave",
     price: 200,
     ingredients: "",
-    photo:weave
+    photo:weave,
+    description:""
     
 },
 {
     name: "Wig",
     price: 150.00,
     ingredients: "",
-    photo:weave
+    photo:weave,
+    description:""
     
 },
 {
     name: "Wig",
     price: 150.00,
     ingredients: "",
-    photo:weave
+    photo:weave,
+    description:""
     
 },
 {
     name: "Wig",
     price: 150.00,
     ingredients: "",
-    photo:weave
+    photo:weave,
+    description:""
     
 },
 {
     name: "Wig",
     price: 150.00,
     ingredients: "",
-    photo:weave
+    photo:weave,
+    description:""
     
 }
 ])

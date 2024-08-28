@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import './nav.css'
 import { FaCartShopping } from "react-icons/fa6";
+import logo from '../pics/logo.jpg'
 
 const Nav = ()=>{
     const [nav, setNav]=useState('')
@@ -14,20 +15,13 @@ const Nav = ()=>{
         <div>
                  <header id="header">
         <span>
-          <img src='' alt="logo"/>
+        <a href='/'><img width={100} src={logo} alt="logo" id="logo"/></a> 
         </span>
         <span>
-          <h2>Hair Stylist Creations</h2>
+          <a style={{textDecoration:'none', color:'white'}} href='/'><h2>Hair Stylist Creations</h2></a>
         </span>
-        <span>
-            <button>Login</button>
-            <button style={{background:"none", color:"pink"}}><FaCartShopping size={30} /></button>
-            
-
-        </span>
-      </header>
         <div id="navhead">
-            <ul id="nav">
+            <div id="nav">
             {/* <li>Products</li> */}
                 <a href="/products">Products</a>
                 {/* <li>Styles</li> */}
@@ -39,10 +33,21 @@ const Nav = ()=>{
 
 
 
-            </ul>
+            </div>
             
 
         </div>
+        <span id='l'>
+          <span >
+          <button id="login">Login</button>
+
+          </span>
+            <button style={{background:"none", color:"pink", border:'none', cursor:'pointer'}}><FaCartShopping size={30} /><a href='./home'></a></button>
+            
+
+        </span>
+      </header>
+    
         <div id="mobilenav">
            <button onClick={tog}>menu</button>
            {toggle && (

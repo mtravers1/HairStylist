@@ -7,7 +7,9 @@ import { useState } from 'react';
 import Footer from './footer';
 import Layout from './layout';
 import mainimg from './pics/mainimg.jpg'
-
+import Reviews from './components/reviews';
+import banner from "./pics/banner.jpg"
+import Styles from './components/styles'
 function Home() {
 
   const [dada, setDada]=useState(data)
@@ -48,35 +50,23 @@ function Home() {
      <Header/>
      <div id="container1">
           <span>
+          <h1>"WORK IN PROGESS"</h1>
+
+            <h1>Looking for a Stylist who is reliable</h1>
             <h3 style={{color:"black"}}>The best stylist in Marylary with unbeatable prices, and %100 satifaction or money back</h3>
           
-          <button>Book Appointment Now</button>
+          <button id='b'>Book Appointment Now</button>
           </span>
           <span>
           <img id="img" src={mainimg} alt="phot"/>
           </span>
     
      </div>
-     <div id="styles">
-      <button id="butt" onClick={()=>setTog(!tog)}>View Styles</button>
-      {tog &&(
-        <div>
-            {dada.map((val)=>(
-      <div>
-        <h4>{val.name}</h4>
-        <p>{val.price}</p>
-        <p>{val.img}</p>
-
-        </div>
-    ))
-
-    }
-
-          </div>
-      )}
-  
-
-     </div>
+  <Styles/>
+     {/* <div id="reviews">
+        <Reviews/>
+     </div> */}
+    
      {/* <footer id="footer" >
       <h3>Contact:</h3>
       <h4>Phone:012-345-6789</h4>

@@ -1,14 +1,10 @@
 #nav{
     display: flex;
     justify-content: space-around;
-    text-transform: none;
     list-style: none;
-    /* background-color: pink; */
-    color: black;
-    margin: 0px;
+    
 }
 #navhead{
-    background-color: pink;
 }
 
 #nav li:hover{
@@ -17,7 +13,9 @@
 }
 #nav a{
     text-decoration: none;
-    color:black;
+     color: pink;
+     padding:20px;
+     font-size: 30px;
 }
 
 #nav a:Hover{
@@ -25,6 +23,33 @@
     color:white;
 }
 
+#l{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+#login{
+    background: none;
+    color: pink;
+    font-family: cursive;
+    border: none;
+    font-size: 30px;
+    padding:20px;
+    cursor: pointer;
+}
+#logo{
+    background: none;
+    border-radius: 80px
+}
+#headerbanner{
+    justify-content: space-around;
+    background-color: white;
+}
+
+#headbanner img{
+    width: 200px;
+}
 
 #mobilenav{
     display: none;
