@@ -41,7 +41,7 @@ const Nav = ()=>{
         </div>
         <span id='l'>
           <span >
-          <button id="login">Login</button>
+          <button id="login"><a href='/login'>Login</a></button>
 
           </span>
             <button style={{background:"none", color:"pink", border:'none', cursor:'pointer'}}><FaCartShopping size={30} /><a href='./home'></a></button>
