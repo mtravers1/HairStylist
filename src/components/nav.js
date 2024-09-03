@@ -23,6 +23,8 @@ const Nav = ()=>{
         <div id="navhead">
             <div id="nav">
             {/* <li>Products</li> */}
+            <a href="/">Home</a>
+
                 <a href="/products">Products</a>
                 {/* <li>Styles</li> */}
                 <a href="/styles">Styles</a>
@@ -47,6 +49,20 @@ const Nav = ()=>{
 
         </span>
       </header>
+      <div id='headmobile'>
+      <span>
+        <a href='/'><img width={50} src={logo} alt="logo" id="logo"/></a> 
+        </span>
+        <span id='l'>
+          <span >
+          <button id="login">Login</button>
+
+          </span>
+            <button style={{background:"none", color:"pink", border:'none', cursor:'pointer'}}><FaCartShopping size={30} /><a href='./home'></a></button>
+            
+
+        </span>
+      </div>
     
         <div id="mobilenav">
            <button onClick={tog}>menu</button>

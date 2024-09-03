@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  font-family: cursive;
+  font-family: 'Courier New', Courier, monospace;
   /* background-image: url('./pics/pinkbackground.jpg'); */
 
   /* background-image: url('./pics/pinkbackground.jpg'); */
@@ -10,13 +10,15 @@
   justify-content: space-between;
   align-items: center;
   color:pink;
-  background-image: url('./pics/pinkbackground.jpg');
+  font-family: 'Courier New', Courier, monospace;
+
+  /* background-image: url('./pics/pinkbackground.jpg'); */
 
 }
 
 #container1{
   display:flex;
-  /* height: 300px; */
+   height: 600px;
   align-items: center;
   justify-content: space-around;
   background-color: pink;
@@ -49,11 +51,13 @@
 }
 #b{
   font-size: 25px;
-  border-radius: 20px;
-  background-image: url('./pics/pinkbackground.jpg');
-  color: white;
-  border:none;
+  background-color: white;
+  font-family: 'Courier New', Courier, monospace;
+  /* background-image: url('./pics/pinkbackground.jpg'); */
+  color: black;
+  border:2px black solid;
   cursor: pointer;
+
 }
 
 
@@ -67,10 +71,27 @@
   
 }
 
+#headmobile{
+  display: none;
+}
+
 @media (max-width: 600px) {
   #container1{
     display: flex;
     flex-wrap: wrap;
   }
-  
+  #container1 img{
+    width:400px
+  }
+
+  #header{
+    display: none;
+  }
+
+  #headmobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
 }

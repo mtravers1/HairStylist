@@ -7,27 +7,49 @@ import { useState } from "react";
 import './styles.css'
 const Styles = ()=>{
     const [tog, setTog]=useState('')
+    const[hairstyles, setHairstyles]=useState([{
+        id:1,
+        name:"Braids",
+        price:100.00,
+        photo:braids
+    },{
+        id:2,
+        name:"Corn-Rows",
+        price:100.00,
+        photo:dreads
+    },
+    {
+        id:3,
+        name:"Twist",
+        price:100.00,
+        photo:braids
+    },
+    {
+        id:4,
+        name:"Dreads",
+        price:100.00,
+        photo:dreads
+    }])
     return(
         <div>
+                  <button id="b" onClick={()=>setTog(!tog)}>View Styles</button>
+
                <div id="styles">
-      <button id="b" onClick={()=>setTog(!tog)}>View Styles</button>
       {tog &&(
-        <div id='s'>
-            {dada.map((val)=>(
-      <div id='containers'>
-        <div>
-        <h4>{val.name}</h4>
-        <p>{val.price}</p>
-        <img id='pic' src={val.img}/>
-        </div>
-        <button id='b'>Add</button>
+       <div id="style">
+       {hairstyles.map((d)=>(
+           <div id='s'>
+               <h2>{d.name}</h2>
+               <h4>$ {d.price}</h4>
+               <img src={d.photo}/>
+               <div id='bu'>
+               <button id="button">Add to Cart</button>
 
-        </div>
-    ))
+                   </div>
 
-    }
-
-          </div>
+           </div>
+       ))}
+       </div>
       )}
   
 
@@ -37,3 +59,4 @@ const Styles = ()=>{
     )
 }
 export default Styles
+

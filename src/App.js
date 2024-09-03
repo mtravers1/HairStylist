@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes, Router } from 'react-router-dom';
 import Products from "./products";
 import Styles from "./styles";
 import Home from "./home";
+import About from "./about";
 const App = ()=>{
   return(
     <div>
@@ -12,6 +13,8 @@ const App = ()=>{
         <Route path="/styles" element={<Styles/>}/> */}
         <Route path="/products" element={<Products/>}/>
         <Route path="/styles" element={<Styles/>}/>
+        <Route path="/about" element={<About/>}/>
+
 
 
 

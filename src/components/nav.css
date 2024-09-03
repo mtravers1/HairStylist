@@ -16,11 +16,12 @@
      color: pink;
      padding:20px;
      font-size: 30px;
+     font-weight: bold;
 }
 
 #nav a:Hover{
     text-decoration: none;
-    color:white;
+    color:black;
 }
 
 #l{
@@ -30,13 +31,19 @@
     padding: 20px;
 }
 #login{
+
     background: none;
     color: pink;
-    font-family: cursive;
+    font-family: 'Courier New', Courier, monospace;
     border: none;
     font-size: 30px;
     padding:20px;
     cursor: pointer;
+    font-weight: bold;
+}
+
+#login:hover{
+    color: black;
 }
 #logo{
     background: none;
@@ -44,7 +51,7 @@
 }
 #headerbanner{
     justify-content: space-around;
-    background-color: white;
+    background-color: black;
 }
 
 #headbanner img{
@@ -55,16 +62,18 @@
     display: none;
 }
 
+
+
 @media(max-width: 600px){
     #nav{
         display:none
     }
 
     #mobilenav{
-        display: block;
-    }
-    #mobilenav{
         background-color: black;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 
     #mobile ul{
@@ -75,11 +84,24 @@
         list-style: none;
     }
 
+    #mobilenav a{
+        padding: 20px;
+        color: pink;
+    }
+    #mobilenav button{
+        font-family: 'Courier New', Courier, monospace;
+        border: pink solid 2px;
+        background-color: white;
+
+    }
     #mob a{
         text-decoration: none;
 
     }
+    #mob{
+        text-align: center;
 
+    }
     #mob ul{
         display: flex;
         flex-direction: column;

@@ -5,6 +5,7 @@ import "./card.css"
 import { useState } from 'react'
 const Card = (props)=>{
     const prod=props.products
+    // const prod=props.hairstyles
     // console.log(prod)
     const [add, SetAdd]=useState({name:"name", price:0, description:"description"})
 
@@ -22,13 +23,16 @@ const Card = (props)=>{
 
 {prod.map((d)=>(
     <div id="prod">
-      <form>
-        <h3 value={d.name}>{d.name}</h3>
-        <h4 value={d.price}>{d.price}</h4>
+      <form id="p">
+        <h2 value={d.name}>{d.name}</h2>
+        <h4 value={d.price}>$ {d.price}</h4>
         <h4 value={d.description}>{d.ingredients}</h4>
         <img value={d.photo} src={d.photo}/>
-        <input />
+        {/* <input /> */}
+        <div id='buttin'>
         <button onClick={handleClick} id="button">Add to cart</button>
+
+        </div>
     </form>
         </div>
 ))}

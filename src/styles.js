@@ -34,14 +34,17 @@ const Styles = ()=>{
     return(
         <div>
         <Nav/>
-            <h1>Styles</h1>
-            <div id="styles">
+            <h1 id='h' >Styles</h1>
+            <div id="style">
             {hairstyles.map((d)=>(
-                <div>
-                    <h3>{d.name}</h3>
-                    <h4>{d.price}</h4>
-                    <img width={200} src={d.photo}/>
+                <div id='s'>
+                    <h2>{d.name}</h2>
+                    <h4>$ {d.price}</h4>
+                    <img src={d.photo}/>
+                    <div id='bu'>
                     <button id="button">Add to Cart</button>
+
+                        </div>
 
                 </div>
             ))}

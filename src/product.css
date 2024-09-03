@@ -6,7 +6,13 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    background-color: pink;
 }
+
+#prod{
+    font-family: 'Courier New', Courier, monospace;
+}
+
 
 
 @media(max-width:600px){
