@@ -72,6 +72,13 @@
     #nav{
         display:none
     }
+    #l{
+        padding:0px
+    }
+
+    #lo{
+        font-size: 24px;
+    }
 
     #mobilenav{
         background-color: black;

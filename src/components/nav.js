@@ -44,7 +44,7 @@ const Nav = ()=>{
           <button id="login"><a href='/login'>Login</a></button>
 
           </span>
-            <button style={{background:"none", color:"pink", border:'none', cursor:'pointer'}}><FaCartShopping size={30} /><a href='./home'></a></button>
+          <a href='./cart'><button style={{background:"none", color:"pink", border:'none', cursor:'pointer'}}><FaCartShopping size={30} /></button></a>
             
 
         </span>
@@ -55,17 +55,17 @@ const Nav = ()=>{
         </span>
         <span id='l'>
           <span >
-          <button id="login">Login</button>
+          <button id="login"><a href='/login'>Login</a></button>
 
           </span>
-            <button style={{background:"none", color:"pink", border:'none', cursor:'pointer'}}><FaCartShopping size={30} /><a href='./home'></a></button>
+            <button style={{background:"none", color:"pink", border:'none', cursor:'pointer'}}><FaCartShopping size={30} /><a href='./cart'></a></button>
             
 
         </span>
       </div>
     
         <div id="mobilenav">
-           <button onClick={tog}>menu</button>
+           <button id='to' onClick={tog}>menu</button>
            {toggle && (
             <div id="mob" >
                 <ul>

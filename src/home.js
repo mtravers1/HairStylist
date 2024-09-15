@@ -15,13 +15,26 @@ function Home() {
   const [dada, setDada]=useState(data)
   const [tog, setTog]=useState(false)
 
+  // let url='http://localhost:8080'
+  // fetch(url).
+  // then(res=>res.json()).
+  // then(data=>console.log(data))
+
+
+
+
+
+
+
+
+
   // const url="http://localhost:8080"
 
   // let info=fetch(url, {
   //   Method: 'Get',
   //   Headers: {
   //     Accept: 'application.json',
-  //     'Content-Type': 'application/json'
+  //    'Content-Type': 'application/json'
   //   },
   
   // })
@@ -55,7 +68,7 @@ function Home() {
             <h1>Looking for a Stylist who is reliable</h1>
             <h3 style={{color:"black"}}>The best stylist in Marylary with unbeatable prices, and %100 satifaction or money back</h3>
           
-          <button id='b'>Book Appointment Now</button>
+          <button id='b'><a style={{textDecoration:'none'}} href="/appointment">Book Appointment Now</a></button>
           </span>
           <span>
           <img id="img" src={mainimg} alt="phot"/>
