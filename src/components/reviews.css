@@ -1,7 +1,6 @@
 #review{
     display:flex;
-    height: 100px;
-    padding-bottom: 40px;
+   padding-bottom: 40px;
     justify-content: space-around;
 }
 
@@ -30,6 +29,6 @@
 }
 
 #review img{
-    height: -webkit-fill-available;
+    height: 140px;
 
 }
