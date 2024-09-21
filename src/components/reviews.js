@@ -27,22 +27,28 @@ const Reviews=()=>{
     },])
     return(
         <div>
-            <h3>Reviews</h3>
-            <div>
+            <h3 id='title'>Reviews</h3>
+            <div id='r'>
                 {
                     data.map((d)=>(
                         <div >
                             <div id="review">
-                            <span id="img">
+                                    <span id="img">
                             {/* <img src={d.img}/> */}
                             <img src={pic}/>
+                            <p id='de'>{d.name}</p>
 
                             </span>
+                            
                             <span id="info">
-                            <p>{d.name}</p>
-                            <p>{d.rating}/5</p>
-                            <p>{d.description}</p>
+                            <p id='de'>{d.description}</p>
+
                             </span>
+                            <span id='info'>
+                            <p id="de">{d.rating}/5</p>
+
+                            </span>
+
                             </div>
                         </div>
                     ))

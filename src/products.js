@@ -11,7 +11,7 @@ import Card from './components/card'
 const Products = ()=>{
 
     const [cart, SetCart]=useState({name:"", price:0, description:""})
-
+    const [filter, SetFilter]=useState(false)
     const handleDelete=(e)=>{
         e.preventDefault()
 
@@ -23,7 +23,8 @@ const Products = ()=>{
     price: 39.00,
     ingredients: "",
     photo:oil,
-    description:""
+    description:"", 
+    category:'oil'
     
 },
 {
@@ -31,7 +32,9 @@ const Products = ()=>{
     price: 39.00,
     ingredients: "",
     photo:oil,
-    description:""
+    description:"",
+    category:'oil'
+
     
 },{
   
@@ -39,7 +42,9 @@ const Products = ()=>{
     price: 200,
     ingredients: "",
     photo:weave,
-    description:""
+    description:"",
+    category:'hair'
+
     
 },
 {
@@ -47,7 +52,9 @@ const Products = ()=>{
     price: 150.00,
     ingredients: "",
     photo:weave,
-    description:""
+    description:"",
+    category:'hair'
+
     
 },
 {
@@ -55,7 +62,9 @@ const Products = ()=>{
     price: 150.00,
     ingredients: "",
     photo:weave,
-    description:""
+    description:"",
+    category:'hair'
+
     
 },
 {
@@ -63,7 +72,9 @@ const Products = ()=>{
     price: 150.00,
     ingredients: "",
     photo:weave,
-    description:""
+    description:"",
+    category:'hair'
+
     
 },
 {
@@ -71,10 +82,21 @@ const Products = ()=>{
     price: 150.00,
     ingredients: "",
     photo:weave,
-    description:""
+    description:"",
+    category:'hair'
+
     
 }
 ])
+
+let hair= products.filter((a)=>{
+    return a.category='hair'
+})
+console.log('this is a oil',hair)
+const toggle = ()=>{
+    SetFilter(!filter)
+    console.log(filter)
+}
     return(
         <div id="prod">
                   {/* <header id="header">
@@ -89,7 +111,28 @@ const Products = ()=>{
         </span>
       </header> */}
             <Nav/>
-            <h1>Products</h1>
+            <div style={{margin:'0', color:'white', background:'black', height:'100px', display:'flex', alignItems:'center', justifyContent:'center'}}>
+            <h1 >Products</h1>
+            <button onClick={toggle}>filter</button>
+            {filter &&(
+                <div id='filter'>
+                    <ul>
+                        <li>
+                            price
+                        </li>
+                        <li>
+                            category
+                        </li>
+                        <li>
+                            newest
+                        </li>
+                        <li>
+                            popular
+                        </li>
+                    </ul>
+                </div>
+            )}
+            </div>
             <Card products={products}/>
             {/* <div id="inven">
 

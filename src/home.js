@@ -10,6 +10,7 @@ import mainimg from './pics/mainimg.jpg'
 import Reviews from './components/reviews';
 import banner from "./pics/banner.jpg"
 import Styles from './components/styles'
+import Slider from './components/imageSlider';
 function Home() {
 
   const [dada, setDada]=useState(data)
@@ -58,9 +59,13 @@ function Home() {
         <span>
             <button>Login</button>
         </span>
-      </header> */}
+      </header
+      > */}
      <Nav/>
-     <Header/>
+     <div id='sl'>
+     <Slider/>
+     </div>
+     
      <div id="container1">
           <span>
           <h1>"WORK IN PROGESS"</h1>
@@ -71,11 +76,12 @@ function Home() {
           <button id='b'><a style={{textDecoration:'none'}} href="/appointment">Book Appointment Now</a></button>
           </span>
           <span>
-          <img id="img" src={mainimg} alt="phot"/>
+          <img id="i" src={mainimg} alt="phot"/>
           </span>
     
      </div>
-  <Styles/>
+  {/* <Styles/> */}
+  <Reviews/>
      {/* <div id="reviews">
         <Reviews/>
      </div> */}

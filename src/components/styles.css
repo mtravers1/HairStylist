@@ -7,7 +7,30 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+ 
     background-color: white;
+}
+
+#sl{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+
+    height: inherit;
+}
+
+#title{
+    margin: 0px;
+    height: 80px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background: black;
+    color: pink;
+
 }
 
 #containers{
