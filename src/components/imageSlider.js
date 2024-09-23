@@ -26,16 +26,16 @@ const Slider = ()=>{
     const delay = 5500;
 
 
-  useEffect(() => {
-    setTimeout(
-      () =>
-        setIndex((prevIndex) =>
-          prevIndex === images.length-1 ? 0 : prevIndex + 1
-        ),
-      delay
-    );
+  // useEffect(() => {
+  //   setTimeout(
+  //     () =>
+  //       setIndex((prevIndex) =>
+  //         prevIndex === images.length-1 ? 0 : prevIndex + 1
+  //       ),
+  //     delay
+  //   );
 
-  }, [index]);
+  // }, [index]);
 
   return (
     <div>
