@@ -58,7 +58,7 @@ const Nav = ()=>{
           <button id="login"><a href='/login'>Login</a></button>
 
           </span>
-            <button ><FaCartShopping size={30} /><a  id='c' href='./cart'></a></button>
+            <button style={{background:"none", color:"pink", border:'none', cursor:'pointer'}}><FaCartShopping size={30} /><a href='./cart'></a></button>
             
 
         </span>

@@ -60,13 +60,10 @@ function Home() {
         <span>
             <button>Login</button>
         </span>
-      </header
-      > */}
+      </header> */}
      <Nav/>
-     <div id='sl'>
      <Slider/>
-     </div>
-     
+     {/* <Header/> */}
      <div id="container1">
           <span>
           <h1>"WORK IN PROGESS"</h1>
@@ -77,12 +74,11 @@ function Home() {
           <button id='b'><a style={{textDecoration:'none'}} href="/appointment">Book Appointment Now</a></button>
           </span>
           <span>
-          <img id="i" src={mainimg} alt="phot"/>
+          <img id="img" src={mainimg} alt="phot"/>
           </span>
     
      </div>
-  {/* <Styles/> */}
-  <Reviews/>
+  <Styles/>
      {/* <div id="reviews">
         <Reviews/>
      </div> */}
