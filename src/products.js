@@ -147,6 +147,8 @@ const toggle = ()=>{
             ))}
             </div> */}
             <h1>Deals</h1>
+
+            
             {/* <div id="inven">
             {products.map((d)=>(
                 <div>

@@ -40,7 +40,6 @@ const Slider = ()=>{
   return (
     <div>
     <div className="slideshow">
-        Image Slider
         <div
         className="slideshowSlider"
         style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}

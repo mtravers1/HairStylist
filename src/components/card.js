@@ -27,6 +27,7 @@ const Card = (props)=>{
             <div id="inven">
 
 {prod.map((d)=>(
+    
     <div id="prod">
       <div id="p">
         <h2 value={d.name}>{d.name}</h2>
